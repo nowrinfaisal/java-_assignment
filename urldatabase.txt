@@ -8,11 +8,10 @@ class urldatabase
 		String[] url=new String[10];
 		int[] cnt=new int[10];
 		int len=0;
-
 	public void store()
 	{
 		int leftLimit = 97; 
-    		int rightLimit = 122; 
+    	int rightLimit = 122; 
    	 	int targetStringLength = 10;
    	 	Random random = new Random();
     		StringBuilder buffer = new StringBuilder(targetStringLength);
@@ -29,7 +28,6 @@ class urldatabase
 		cnt[len]=0;
 		len++;
 	}
-
 	public void get()
 	{
 		System.out.println("Enter a url--> ");
@@ -45,7 +43,6 @@ class urldatabase
 				}
 		}
 	}
-
 	public void count()
 	{
 		System.out.println("Enter a url--> ");
@@ -60,7 +57,6 @@ class urldatabase
 			}
 		}
 	}
-
 	public void list()
 	{
 		int i;
@@ -68,13 +64,11 @@ class urldatabase
 			System.out.println("Url--> "+url[i]+" Count--> "+cnt[i]);
 		}
 	}
-
 	public static void main(String args[])
 	{
 		urldatabase obj=new urldatabase();
 		while(true)
 		{
-			System.out.println("\nVARIOUS OPERATIONS : ");
 			System.out.println("storeurl");
 			System.out.println("get");
 			System.out.println("count ");
